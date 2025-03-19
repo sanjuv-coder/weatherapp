@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app-header">
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="search-box">
+            <input type="text" placeholder="Search for a city..." class="search-input">
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        
+        <div class="weather-box">
+            <div class="weather-info">
+                <h1 class="city">Weather App</h1>
+                <div class="date-time">
+                    <span id="current-date">Today</span>
+                </div>
+                
+                <div class="weather-details">
+                    <img src="" alt="weather icon" class="weather-icon">
+                    <h2 class="temperature">--°C</h2>
+                    <p class="description">Enter a city name to get started</p>
+                    
+                    <div class="feels-like">
+                        <span>Feels like: </span>
+                        <span id="feels-like">--°C</span>
+                    </div>
+                </div>
+                
+                <div class="weather-stats">
+                    <div class="stat">
+                        <i class="fas fa-wind"></i>
+                        <p>Wind</p>
+                        <span class="wind">-- km/h</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-droplet"></i>
+                        <p>Humidity</p>
+                        <span class="humidity">--%</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-compress-alt"></i>
+                        <p>Pressure</p>
+                        <span id="pressure">-- hPa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Made with <i class="fas fa-heart"></i> | Weather data by OpenWeatherMap</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
